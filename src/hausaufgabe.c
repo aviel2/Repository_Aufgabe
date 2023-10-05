@@ -7,14 +7,14 @@ int main()
     FILE* ptr;
     char ch;
 
-    ptr = fopen("secret_data.txt", "r");
+    ptr = fopen("secret_data.txt.gitignore", "r");
 
     if (NULL == ptr) {
         printf("Die Datei konnte nicht geöffnet werden.\n");
         return 1;
     }
 
-    printf("Login mit Daten:\n")
+    printf("Login mit Daten:\n");
 
     do {
         ch = fgetc(ptr);
@@ -27,3 +27,4 @@ int main()
     fclose(ptr);
     return 0;
 }
+ 
